@@ -3,27 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/57b1df6bab.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Kokoa | Welcome</title>
   </head>
   <body>
-    <div class="statusbar">
-      <div class="statusbar__column">
-        <span class="">No Service</span>
-        <!-- 와이파이 아이콘 -->
+    <div class="screen">
+      <div class="statusbar">
+        <div class="statusbar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="statusbar__column">18:43</div>
+        <div class="statusbar__column">
+          <i class="fas fa-sync-alt"></i>
+          <span>11%</span>
+          <i class="fas fa-battery-three-quarters"></i>
+          <i class="fas fa-bolt"></i>
+        </div>
       </div>
-      <div class="statusbar__column">18:43</div>
-      <div class="statusbar__column">
-        <!-- 회전 잠금 아이콘 -->
-        <span class="">11%</span>
-        <!-- 배터리 아이콘
-          충전 아이콘 -->
-      </div>
+      <header class="welcome">
+        <div class="welcome__title"><h1>Welcome to KokoaTalk</h1></div>
+        <div class="welcome__greeting-message">
+          <h3>
+            If you have a Kokoa Account,<br />log in with your email or phone
+            number.
+          </h3>
+        </div>
+      </header>
+      <form action="">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+          class="login"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+          class="login"
+        />
+        <input type="submit" class="login__btn" value="Log In" />
+      </form>
+      <input type="button" class="login__btn" value="Sign Up" />
+      <a href="#" class="find-userdata"
+        ><h4>Find Kokoa Account or Password</h4></a
+      >
     </div>
-    <header class="welcome">
-      <div class="welcome__title">Welcome to KokoaTalk</div>
-      <div class="welcome__greeting-message">
-        If you have a Kokoa Account,<br />log in with your email or phone number
-      </div>
-    </header>
   </body>
 </html>

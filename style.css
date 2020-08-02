@@ -1,0 +1,110 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+* {
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: wheat;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.screen {
+  width: 750px;
+  height: 1334px;
+  background-color: white;
+  padding: 60px 20px 20px 20px;
+  box-sizing: border-box;
+}
+
+.statusbar {
+  position: sticky;
+  top: 0;
+  height: 40px;
+  margin: -60px -20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.statusbar__column {
+  display: flex;
+  align-items: center;
+}
+
+.statusbar__column span,
+.statusbar__column i {
+  margin-right: 10px;
+}
+
+.statusbar__column i:last-child {
+  margin-right: 0;
+}
+
+.welcome {
+  text-align: center;
+  margin: 230px 0 120px 0;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 25px;
+  color: #8a8a8a;
+  font-weight: 600;
+}
+
+.welcome h3 {
+  line-height: 140%;
+}
+
+.welcome__title,
+.userdata {
+  margin-bottom: 40px;
+}
+
+input {
+  font-size: 30px;
+  display: block;
+  height: 90px;
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+input::placeholder {
+  color: #8a8a8a;
+}
+
+.login {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.login:focus {
+  border-bottom: 1px solid black;
+}
+
+.login__btn {
+  border-radius: 5px;
+  background-color: #eeeeee;
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
